@@ -1,46 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>itforall - Programmierung</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Prism CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
     <style>
-        body {
-            text-align: left;
-        }
+      body {
+        text-align: left;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Heading 1</h1>
-        <p>This is a paragraph of text under heading 1. It is aligned to the left.</p>
+      <h1>Algorithmus</h1>
+      <p>
+        Ein Algorithmus ist eine definierte und endliche Vorgehensweise, mit der ein Problem gelöst werden.<br> 
+        Er besteht aus Anweisungen, welche Schritt für Schritt und in der definierten Reihenfolge abgearbeitet werden.<br>
+        Ein Algorithmus ist erst einmal nichts weiter als eine Handlungsvorschrift, mit der man ein Problem lösen kann.<br>
+        Algorithmen werden dann mithilfe von Programmen auf IT-Systemen umgesetzt. Dazu bedient man sich einer Programmiersprache, in welcher das Programm geschrieben wird.<br>
+        Der Algorithmus selbst ist aber programmiersprachenunabhängig!
+      </p>
 
-        <h1>Heading 2</h1>
-        <p>This is a paragraph of text under heading 2. It is also aligned to the left.</p>
+      <h1>Programm</h1>
+      <p>
+        "Programm" und "Sofware" sind Synonyme. <br>
+        <span class="text-danger">Es gibt jedoch einige Unterschiede!</span> <br>
+        Unter einem Programm kann man einen Text (Quellcode) verstehen, der aus Befehlen und Speicheradressen, in welchen Daten gespeichert werden, besteht. <br>
+        Ein Compiler übersetzt diesen Text, welcher in einer bestimmten Programmiersprache verfasst ist, in Maschnenbefehle.
+      </p>
 
-        <h1>Heading 3</h1>
-        <p>This is a paragraph of text under heading 3. Below is a list:</p>
-        <ul>
-            <li>First item in the list</li>
-            <li>Second item in the list</li>
-            <li>Third item in the list</li>
-        </ul>
+      <h1>Heading 3</h1>
+      <p>This is a paragraph of text under heading 3. Below is a list:</p>
+      <ul>
+        <li>First item in the list</li>
+        <li>Second item in the list</li>
+        <li>Third item in the list</li>
+      </ul>
 
-        <h1>Heading 4</h1>
-        <p>This is another paragraph of text under heading 4. Below is an ordered list:</p>
-        <ol>
-            <li>First item in the ordered list</li>
-            <li>Second item in the ordered list</li>
-            <li>Third item in the ordered list</li>
-        </ol>
+      <h1>Heading 4</h1>
+      <p>
+        This is another paragraph of text under heading 4. Below is an ordered
+        list:
+      </p>
+      <ol>
+        <li>First item in the ordered list</li>
+        <li>Second item in the ordered list</li>
+        <li>Third item in the ordered list</li>
+      </ol>
+      <h1>Code Snippet</h1>
+      <p>
+        Below is an example of a Python code snippet with syntax highlighting:
+      </p>
+      <pre><code class="language-python">
+def ggt(a, b):
+    if a == 0:
+        return b
+    while b != 0:
+        if a > b:
+            a = a - b
+        else:
+            b = b - a
+    return a
+        </code></pre>
+        <hr>
+        <pre><code class="language-csharp">
+            using System;
+
+            class Program
+            {
+                static void Main()
+                {
+                    Console.WriteLine(Ggt(48, 18)); // Example usage
+                }
+            
+                static int Ggt(int a, int b)
+                {
+                    if (a == 0)
+                    {
+                        return b;
+                    }
+            
+                    while (b != 0)
+                    {
+                        if (a > b)
+                        {
+                            a = a - b;
+                        }
+                        else
+                        {
+                            b = b - a;
+                        }
+                    }
+            
+                    return a;
+                }
+            }
+        </code></pre>
+                </div>
     </div>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <!-- Prism JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <!-- Prism Autoloader for languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+    <!-- Prism Autoloader for languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-csharp.min.js"></script>
+    <script>
+        // Initialize Prism
+        Prism.highlightAll();
+    </script>
+  </body>
 </html>
-
