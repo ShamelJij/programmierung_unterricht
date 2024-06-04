@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <!-- Prism CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" />
-  <style>
-    body {
+ <style>
+  body {
+      background-color: #40444B;
+      color: white;
       text-align: left;
     }
   </style>
@@ -220,21 +222,21 @@
     <h6>C#</h6>
     <pre><code class="language-csharp">
                     using System;
-        
+
                     class Program
                     {
                         static void Main()
                         {
                             Console.WriteLine(Ggt(48, 18)); // Beispiel verwenden
                         }
-                    
+
                         static int Ggt(int a, int b)
                         {
                             if (a == 0)
                             {
                                 return b;
                             }
-                    
+
                             while (b != 0)
                             {
                                 if (a > b)
@@ -246,7 +248,7 @@
                                     b = b - a;
                                 }
                             }
-                    
+
                             return a;
                         }
                     }
